@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3F6358;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.contact-section {
+    background-color: #E8B100; 
+    color: #333; 
+    padding: 15px;
+    text-align: center; 
+    border-radius: 8px; 
+    margin: 30px 0; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+    color: #E8B100;
+}
+
+.full-width-image {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.full-width-image img {
+    width: 100%;
+    height: 750px; 
+    display: block;
+}
+
+.language-section, .operating-systems-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    text-align: center; /* Centra el texto */
+}
+
+.language-content, .operating-systems-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.language-item, .operating-system-item {
+    flex: 1 1 30%;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.language-item img, .operating-system-item img {
+    width: 80px; 
+    height: 80px; 
+    margin-bottom: 10px; 
+}
+
+.menu {
+    padding: 20px;
+}
+
+.menu table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.menu th, .menu td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.menu th {
+    background-color: #3F6358;
+    color: white;
+}
+
+.menu td a {
+    color: #3F6358;
+    text-decoration: none;
+}
+
+.menu td a:hover {
+    text-decoration: underline;
+}
+
+.social-media-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.social-media-item {
+    width: 23%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-media-item img {
+    width: 80px; 
+    height: 80px; 
+    margin-bottom: 10px; 
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #f4f4f4;
+    color: #333; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+p {
+    padding: 0 20px; 
+}
+
+#personal, #contactos {
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+.moving-images {
+    overflow: hidden;
+    position: relative;
+    height: 200px; 
+}
+
+.moving-image-container {
+    display: flex;
+    animation: move 15s linear infinite; 
+}
+
+.moving-image-container img {
+    width: 350px;
+    height: auto; 
+    margin-right: 20px; 
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(100%); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+@media (max-width: 768px) {
+    .social-media-item {
+        width: 48%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .social-media-item {
+        width: 100%; 
+    }
+
+    .moving-image-container img {
+        width: 80px; 
+    }
+}
